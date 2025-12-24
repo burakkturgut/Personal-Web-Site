@@ -1,0 +1,412 @@
+.about-page {
+    min-height: 100vh;
+    padding: 8rem 2rem 4rem;
+    background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+}
+
+.about-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-hero-with-photo {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 5rem;
+    align-items: center;
+    margin-bottom: 6rem;
+    min-height: 70vh;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: #111;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #000000 0%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about-intro {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.about-quote {
+    font-size: 1rem;
+    font-style: italic;
+    color: #2563eb;
+    padding-left: 1.5rem;
+    border-left: 3px solid #257beb9f;
+    margin-top: 1rem;
+}
+
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.about-profile-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.15),
+        0 0 0 1px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.about-profile-image:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow:
+        0 35px 70px rgba(0, 0, 0, 0.2),
+        0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.fade-image {
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.image-wrapper img {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.about-timeline {
+    margin-bottom: 6rem;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 4rem;
+    margin-top: 3rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 1.5rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #2563eb 0%, #7c3aed 100%);
+    opacity: 0.3;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -2.75rem;
+    top: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.25rem;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-dot {
+    transform: scale(1.15);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
+}
+
+.timeline-content {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 1.5rem;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 12px solid #ffffff;
+}
+
+.timeline-item:hover .timeline-content {
+    transform: translateX(8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    border-color: #2563eb;
+}
+
+.timeline-date {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #2563eb;
+    background: rgba(37, 99, 235, 0.1);
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.timeline-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-subtitle {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.timeline-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+.section-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.about-cta {
+    text-align: center;
+}
+
+.cta-card {
+    background: linear-gradient(135deg, #099297 0%, #0b8dc0 100%);
+    padding: 4rem 3rem;
+    border-radius: 24px;
+    color: #ffffff;
+    box-shadow: 0 20px 50px rgba(37, 99, 235, 0.3);
+}
+
+.cta-card h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.cta-card p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2.5rem;
+    background: #ffffff;
+    color: #25bdeb;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+}
+
+.cta-button .arrow {
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover .arrow {
+    transform: translateX(4px);
+}
+
+
+@media (max-width: 1024px) {
+    .about-hero-with-photo {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        min-height: auto;
+    }
+
+    .hero-content {
+        order: 2;
+    }
+
+    .hero-image {
+        order: 1;
+    }
+
+    .image-wrapper {
+        max-width: 350px;
+    }
+
+    .about-title {
+        font-size: 3rem;
+    }
+
+    .timeline {
+        padding-left: 3rem;
+    }
+
+    .timeline-dot {
+        left: -2.25rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-page {
+        padding: 6rem 1.5rem 3rem;
+    }
+
+    .about-hero-with-photo {
+        gap: 2rem;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .about-title {
+        font-size: 2.5rem;
+    }
+
+    .about-intro,
+    .about-quote {
+        text-align: left;
+    }
+
+    .image-wrapper {
+        max-width: 300px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .timeline {
+        padding-left: 2.5rem;
+    }
+
+    .timeline-dot {
+        left: -2rem;
+        width: 2rem;
+        height: 2rem;
+        font-size: 0.875rem;
+    }
+
+    .timeline-content {
+        padding: 1.5rem;
+    }
+
+    .cta-card {
+        padding: 3rem 2rem;
+    }
+
+    .cta-card h2 {
+        font-size: 2rem;
+    }
+
+    .cta-card p {
+        font-size: 1.125rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-intro {
+        font-size: 1rem;
+    }
+
+    .about-quote {
+        font-size: 0.9rem;
+        padding-left: 1rem;
+    }
+
+    .image-wrapper {
+        max-width: 280px;
+    }
+
+    .timeline-title {
+        font-size: 1.25rem;
+    }
+
+    .cta-card h2 {
+        font-size: 1.75rem;
+    }
+
+    .cta-button {
+        padding: 0.875rem 2rem;
+        font-size: 1rem;
+    }
+}
