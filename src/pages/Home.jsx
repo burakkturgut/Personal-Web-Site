@@ -1,30 +1,4 @@
 import "../css/Home.css";
-import {
-    SiReact,
-    SiTypescript,
-    SiJavascript,
-    SiRedux,
-    SiHtml5,
-    SiCss3,
-    SiGithubcopilot,
-    SiPython,
-    SiDjango,
-    SiFlask,
-    SiPandas,
-    SiNumpy,
-    SiScikitlearn,
-    SiJupyter,
-    SiPostgresql,
-    SiOpenai,
-    SiGit,
-    SiGithub,
-    SiPostman,
-    SiGooglegemini
-} from "react-icons/si";
-import { TbSql } from "react-icons/tb";
-import { RiClaudeFill } from "react-icons/ri";
-import { DiMsqlServer } from "react-icons/di";
-import { VscVscode } from "react-icons/vsc";
 import profilImage from '../assets/images/burak.jpg';
 import { useNavigate } from "react-router-dom";
 

@@ -1,0 +1,580 @@
+/* Education Page Container */
+.education-page {
+    min-height: 100vh;
+    padding: 8rem 2rem 4rem;
+    background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+}
+
+.education-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+.education-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.header-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(37, 99, 235, 0.1);
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2563eb;
+    margin-bottom: 2rem;
+}
+
+.header-badge svg {
+    font-size: 1.25rem;
+}
+
+.education-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #111;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.education-subtitle {
+    font-size: 1.125rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Main Education Card */
+.education-main {
+    margin-bottom: 5rem;
+}
+
+.education-card-main {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 24px;
+    padding: 3rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.education-card-main:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+}
+
+.edu-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #f3f4f6;
+}
+
+.edu-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.edu-title-section {
+    flex: 1;
+}
+
+.edu-degree {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 0.5rem;
+}
+
+.edu-type {
+    display: inline-block;
+    padding: 0.375rem 1rem;
+    background: rgba(37, 99, 235, 0.1);
+    color: #2563eb;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.edu-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.edu-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.info-item svg {
+    color: #2563eb;
+    font-size: 1.125rem;
+}
+
+.edu-gpa {
+    text-align: center;
+    padding: 1.25rem 2rem;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border-radius: 16px;
+    border: 2px solid #2563eb;
+}
+
+.gpa-label {
+    font-size: 0.875rem;
+    color: #2563eb;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.gpa-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1e40af;
+}
+
+.edu-description-section {
+    background: #f9fafb;
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid #e5e7eb;
+}
+
+.description-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 1.5rem;
+}
+
+.description-title svg {
+    color: #2563eb;
+    font-size: 1.5rem;
+}
+
+.edu-description {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.25rem;
+    text-align: justify;
+}
+
+.edu-description:last-child {
+    margin-bottom: 0;
+}
+
+/* Courses Section */
+.courses-section {
+    margin-bottom: 5rem;
+}
+
+.courses-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.section-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    color: #666;
+}
+
+.toggle-all-btn {
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.toggle-all-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+}
+
+/* Accordion Styles */
+.courses-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.accordion-item {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.accordion-item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.accordion-item.open {
+    border-color: #2563eb;
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.15);
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.accordion-header:hover {
+    background: #f9fafb;
+}
+
+.accordion-item.open .accordion-header {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(124, 58, 237, 0.05) 100%);
+}
+
+.accordion-header-content {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex: 1;
+}
+
+.category-icon-small {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.accordion-item.open .category-icon-small {
+    transform: scale(1.1);
+}
+
+.accordion-title-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.accordion-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #111;
+    margin: 0;
+}
+
+.course-count {
+    font-size: 0.85rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.accordion-toggle {
+    color: #2563eb;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.accordion-item.open .accordion-toggle {
+    transform: rotate(180deg);
+}
+
+/* Accordion Content */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.accordion-content.show {
+    max-height: 2000px;
+    padding: 0 2rem 1.5rem;
+}
+
+/* Course List inside Accordion */
+.courses-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.course-item {
+    padding: 1.25rem;
+    background: #f9fafb;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+}
+
+.course-item:hover {
+    background: #ffffff;
+    border-color: #2563eb;
+    transform: translateX(4px);
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.1);
+}
+
+.course-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.course-bullet {
+    color: #2563eb;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1;
+    margin-top: -0.125rem;
+}
+
+.course-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111;
+    line-height: 1.4;
+}
+
+.course-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #666;
+    margin-left: 2.25rem;
+}
+
+.education-cta {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cta-content {
+    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+    padding: 4rem 3rem;
+    border-radius: 24px;
+    color: #ffffff;
+    box-shadow: 0 20px 50px rgba(37, 99, 235, 0.3);
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-btn.primary {
+    background: #ffffff;
+    color: #2563eb;
+}
+
+.cta-btn.primary:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+}
+
+.cta-btn.secondary {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.cta-btn.secondary:hover {
+    background: #ffffff;
+    color: #2563eb;
+    transform: translateY(-4px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .education-title {
+        font-size: 3rem;
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .education-page {
+        padding: 6rem 1.5rem 3rem;
+    }
+
+    .education-title {
+        font-size: 2.5rem;
+    }
+
+    .education-card-main {
+        padding: 2rem;
+    }
+
+    .edu-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .edu-degree {
+        font-size: 1.75rem;
+    }
+
+    .edu-details {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .edu-gpa {
+        width: 100%;
+    }
+
+    .edu-description-section {
+        padding: 1.5rem;
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .course-category-card {
+        padding: 1.5rem;
+    }
+
+    .cta-content {
+        padding: 3rem 2rem;
+    }
+
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-title {
+        font-size: 2rem;
+    }
+
+    .edu-degree {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .course-category-card {
+        padding: 1.25rem;
+    }
+
+    .category-title {
+        font-size: 1.125rem;
+    }
+
+    .course-name {
+        font-size: 1rem;
+    }
+
+    .course-description {
+        font-size: 0.875rem;
+    }
+
+    .cta-content h2 {
+        font-size: 1.75rem;
+    }
+
+    .cta-content p {
+        font-size: 1.0625rem;
+    }
+}

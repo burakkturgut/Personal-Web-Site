@@ -58,7 +58,7 @@ function About() {
                 <section className="about-hero-with-photo">
                     <div className="hero-content">
                         <h1 className="about-title">
-                            Merhaba, Ben <span className="gradient-text">Burak Turgut</span>
+                            Merhaba, Ben Burak Turgut
                         </h1>
                         <p className="about-intro">
                             Bilgisayar Mühendisliği mezunuyum ve teknolojiyi hayatı kolaylaştıran çözümler üretmek için kullanmayı seviyorum.
