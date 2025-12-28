@@ -1,18 +1,14 @@
 import '../css/Education.css';
 import { useState } from 'react';
 import {
-    FaUniversity,
-    FaCalendarAlt,
-    FaMapMarkerAlt,
-    FaChevronDown,
-    FaChevronUp
+    FaUniversity, FaCalendarAlt, FaMapMarkerAlt, FaChevronDown, FaChevronUp
 } from "react-icons/fa";
 import { educationData } from '../config/education'
 import { courseCategories } from '../config/education'
 import banü from '../assets/images/banü.jpg'
 
 function Education() {
-    const { degree, type, school, location, period, gpa, description, academicFocus } = educationData
+    const { degree, type, school, location, period, gna, description, academicFocus } = educationData
 
     const [openCategories, setOpenCategories] = useState([0]);
 
@@ -70,9 +66,9 @@ function Education() {
                                 </div>
                             </div>
 
-                            <div className="edu-gpa">
-                                <div className="gpa-label">GPA</div>
-                                <div className="gpa-value">{gpa}</div>
+                            <div className="edu-gna">
+                                <div className="gna-label">GNA</div>
+                                <div className="gna-value">{gna}</div>
                             </div>
                         </div>
 
@@ -85,8 +81,6 @@ function Education() {
                         </div>
                     </div>
                 </section>
-
-                {/* Accordion Courses Section */}
                 <section className="courses-section">
                     <div className="courses-header">
                         <div>

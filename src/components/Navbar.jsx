@@ -6,7 +6,6 @@ const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
-    // Scroll detection - navbar'ı sayfa aşağı kaydırıldığında daha belirgin yaptım.
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 50);
@@ -34,7 +33,7 @@ const Navbar = () => {
         <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
             <div className="navbar-container">
                 <NavLink to="/" className="logo" onClick={closeMenu}>
-                    <span className="logo-text">Burak Turgut</span>
+                    <span className="logo-text">Sayfama Hoşgeldiniz</span>
                     <span className="logo-dot">.</span>
                 </NavLink>
                 <div className="nav-links">

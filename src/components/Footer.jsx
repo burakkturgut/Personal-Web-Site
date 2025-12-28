@@ -7,7 +7,6 @@ import { useState, useEffect } from "react";
 const Footer = () => {
     const [showScrollTop, setShowScrollTop] = useState(false);
 
-    // Scroll pozisyonuna göre scroll-to-top butonunu göster/gizle
     useEffect(() => {
         const handleScroll = () => {
             setShowScrollTop(window.scrollY > 300);
@@ -51,7 +50,7 @@ const Footer = () => {
                     <div className="footer-section">
                         <h4 className="footer-heading">İletişim</h4>
                         <div className="footer-contact">
-                            <a href="mailto:burak@example.com" className="contact-item">
+                            <a href="mailto:burak.turgut.dev@gmail.com" className="contact-item">
                                 <FaEnvelope />
                                 <span>burak.turgut.dev@gmial.com</span>
                             </a>

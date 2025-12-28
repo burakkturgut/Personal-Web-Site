@@ -1,5 +1,4 @@
 import {
-    FaLaptopCode,
     FaChartLine,
     FaCode,
     FaBrain,
@@ -16,7 +15,7 @@ export const educationData = {
     school: "Bandırma Onyedi Eylül Üniversitesi",
     location: "Bandırma, Balıkesir",
     period: "2020 - 2025",
-    gpa: "3.35 / 4.0",
+    gna: "3.35 / 4.0",
     description: `Bilgisayar Mühendisliği lisans eğitimim boyunca yazılım geliştirme, veri yapıları, algoritmalar, yapay zekâ ve web teknolojileri gibi bilgisayar mühendisliğinin temel alanlarında kapsamlı bir akademik altyapı edindim. Eğitim sürecimde, teorik bilgiyi proje tabanlı çalışmalarla pekiştirerek analitik düşünme, problem çözme ve sistematik çalışma becerilerimi geliştirdim. Bu süreç, modern yazılım geliştirme yaklaşımlarını ve mühendislik bakış açısını benimsememde önemli rol oynadı. Eğitimim süresince özellikle yapay zekâ, makine öğrenmesi ve yazılım mühendisliği alanlarına odaklandım. Derin öğrenme algoritmaları, veri analizi ve model geliştirme konularında çalışmalar yaparak, bu teknolojilerin gerçek dünya problemlerine nasıl uygulanabileceğini deneyimleme fırsatı buldum. Aynı zamanda modern web teknolojileri ile kullanıcı odaklı ve sürdürülebilir yazılım çözümleri geliştirdim.`,
     academicFocus: `Aldığım dersler ve gerçekleştirdiğim projeler sayesinde, teorik temelleri güçlü, pratik uygulamalarla desteklenen bir mühendislik yaklaşımı kazandım. Eğitim hayatım boyunca sürekli öğrenmeyi, kendimi geliştirmeyi ve yeni teknolojileri yakından takip etmeyi ilke edinerek, üretken ve çözüm odaklı bir çalışma anlayışı benimsedim.`
 };

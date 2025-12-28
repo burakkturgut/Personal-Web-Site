@@ -1,39 +1,12 @@
 import '../css/About.css';
-import '../css/Home.css';
-import {
-    SiReact,
-    SiTypescript,
-    SiJavascript,
-    SiRedux,
-    SiHtml5,
-    SiCss3,
-    SiGithubcopilot,
-    SiPython,
-    SiDjango,
-    SiFlask,
-    SiPandas,
-    SiNumpy,
-    SiScikitlearn,
-    SiJupyter,
-    SiPostgresql,
-    SiOpenai,
-    SiGit,
-    SiGithub,
-    SiPostman,
-    SiGooglegemini
-} from "react-icons/si";
-import { TbSql } from "react-icons/tb";
-import { RiClaudeFill } from "react-icons/ri";
-import { DiMsqlServer } from "react-icons/di";
-import { VscVscode } from "react-icons/vsc";
-import { timeline } from '../config/timeline';
+import { timeline, jobtimeline } from '../config/timeline';
 import { useEffect, useState } from "react";
 import Image1 from '../assets/images/burak_siha.jpeg';
 import Image2 from '../assets/images/burak_mezuniyet.jpeg';
 import Image3 from '../assets/images/burak_siha2.jpeg';
 import Image4 from '../assets/images/burak_mezuniyet2.jpeg';
 import Image5 from '../assets/images/burak_siha_yapım.jpeg';
-
+import Skills from "../components/skills";
 
 const images = [Image1, Image2, Image3, Image4, Image5];
 
@@ -102,185 +75,29 @@ function About() {
                         ))}
                     </div>
                 </section>
-
-                <section className="skills">
-                    <h3>Kullandığım Teknolojiler</h3>
-
-                    <div className="skills-category">
-                        <h4>Backend & Data Science</h4>
-                        <div className="skills-grid">
-                            <a href="https://www.python.org" target="_blank" rel="noopener noreferrer">
-                                <div className="skill-item">
-                                    <SiPython />
-                                    <span>Python</span>
+                <section className="about-timeline">
+                    <h2 className="section-title">İş Deneyimlerim</h2>
+                    <div className="timeline">
+                        {jobtimeline.map((item, index) => (
+                            <div key={index} className="timeline-item">
+                                <div className="timeline-line"></div>
+                                <div
+                                    className="timeline-dot"
+                                    style={{ background: item.color }}
+                                >
+                                    {item.icon}
                                 </div>
-                            </a>
-                            <a href="https://www.djangoproject.com" target="_blank" rel="noopener noreferrer" >
-                                <div className="skill-item">
-                                    <SiDjango />
-                                    <span>Django</span>
+                                <div className="timeline-content">
+                                    <span className="timeline-date">{item.date}</span>
+                                    <h3 className="timeline-title">{item.title}</h3>
+                                    <span className="timeline-subtitle">{item.subtitle}</span>
+                                    <p className="timeline-description">{item.description}</p>
                                 </div>
-                            </a>
-                            <a href="https://flask.palletsprojects.com/en/stable/" target="_blank" rel="noopener noreferrer" >
-                                <div className="skill-item">
-                                    <SiFlask />
-                                    <span>Flask</span>
-                                </div>
-                            </a>
-                            <a href="https://pandas.pydata.org" target="_blank" rel="noopener noreferrer">
-                                <div className="skill-item">
-                                    <SiPandas />
-                                    <span>Pandas</span>
-                                </div>
-                            </a>
-                            <a href="https://numpy.org" target="_blank" rel="noopener noreferrer">
-                                <div className="skill-item">
-                                    <SiNumpy />
-                                    <span>NumPy</span>
-                                </div>
-                            </a>
-                            <a href="https://scikit-learn.org/stable/" target="_blank" rel="noopener noreferrer">
-                                <div className="skill-item">
-                                    <SiScikitlearn />
-                                    <span>Scikit-learn</span>
-                                </div>
-                            </a>
-                            <a href="https://jupyter.org" target="_blank" rel="noopener noreferrer">
-                                <div className="skill-item">
-                                    <SiJupyter />
-                                    <span>Jupyter</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div className="skills-category">
-                        <h4>Frontend Development</h4>
-                        <div className="skills-grid">
-                            <a href="https://tr.react.dev" target="_blank" rel="noopener noreferrer">
-                                <div className="skill-item">
-                                    <SiReact />
-                                    <span>React</span>
-                                </div>
-                            </a>
-                            <a href="https://www.typescriptlang.org" target="_blank" rel="noopener noreferrer">
-                                <div className="skill-item">
-                                    <SiTypescript />
-                                    <span>TypeScript</span>
-                                </div>
-                            </a>
-                            <a href="https://www.w3schools.com/Js/" target="_blank" rel="noopener noreferrer">
-                                <div className="skill-item">
-                                    <SiJavascript />
-                                    <span>JavaScript</span>
-                                </div>
-                            </a>
-                            <a href="https://redux.js.org" target="_blank" rel="noopener noreferrer">
-                                <div className="skill-item">
-                                    <SiRedux />
-                                    <span>Redux</span>
-                                </div>
-                            </a>
-                            <a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer">
-                                <div className="skill-item">
-                                    <SiHtml5 />
-                                    <span>HTML5</span>
-                                </div>
-                            </a>
-                            <a href="https://www.w3schools.com/css/" target="_blank" rel="noopener noreferrer">
-                                <div className="skill-item">
-                                    <SiCss3 />
-                                    <span>CSS3</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div className="skills-category">
-                        <h4>Veritabanı ve Depolama</h4>
-                        <div className="skills-grid">
-                            <a href="https://www.microsoft.com/tr-tr/sql-server/sql-server-2022" target="_blank" rel="noopener noreferrer">
-                                <div className="skill-item">
-                                    <DiMsqlServer />
-                                    <span>MsSQL</span>
-                                </div>
-                            </a>
-                            <a href="https://www.postgresql.org" target="_blank" rel="noopener noreferrer">
-                                <div className="skill-item">
-                                    <SiPostgresql />
-                                    <span>PostgreSQL</span>
-                                </div>
-                            </a>
-                            <a href="https://www.w3schools.com/sql/" target="_blank" rel="noopener noreferrer">
-                                <div className="skill-item">
-                                    <TbSql />
-                                    <span>SQL</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div className="skills-category">
-                        <h4>Yapay Zeka ve Otomasyon</h4>
-                        <div className="skills-grid">
-                            <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">
-                                <div className="skill-item">
-                                    <SiOpenai />
-                                    <span>ChatGPT</span>
-                                </div>
-                            </a>
-                            <a href="https://claude.ai/new" target="_blank" rel="noopener noreferrer">
-                                <div className="skill-item">
-                                    <RiClaudeFill />
-                                    <span>Claude AI</span>
-                                </div>
-                            </a>
-                            <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer">
-                                <div className="skill-item">
-                                    <SiGooglegemini />
-                                    <span>Gemini</span>
-                                </div>
-                            </a>
-                            <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">
-                                <div className="skill-item">
-                                    <SiGithubcopilot />
-                                    <span>GitHub Copilot</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div className="skills-category">
-                        <h4>Tools & Version Control</h4>
-                        <div className="skills-grid">
-                            <a href="https://git-scm.com" target="_blank" rel="noopener noreferrer">
-                                <div className="skill-item">
-                                    <SiGit />
-                                    <span>Git</span>
-                                </div>
-                            </a>
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                                <div className="skill-item">
-                                    <SiGithub />
-                                    <span>GitHub</span>
-                                </div>
-                            </a>
-                            <a href="https://www.postman.com" target="_blank" rel="noopener noreferrer">
-                                <div className="skill-item">
-                                    <SiPostman />
-                                    <span>Postman</span>
-                                </div>
-                            </a>
-                            <a href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer">
-                                <div className="skill-item">
-                                    <VscVscode />
-                                    <span>VS Code</span>
-                                </div>
-                            </a>
-                        </div>
+                            </div>
+                        ))}
                     </div>
                 </section>
-
+                <Skills />
                 <section className="about-cta">
                     <div className="cta-card">
                         <h2>Birlikte Çalışalım</h2>
@@ -291,7 +108,6 @@ function About() {
                         </a>
                     </div>
                 </section>
-
             </div>
         </div>
     );

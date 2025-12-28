@@ -1,8 +1,8 @@
 import {
     FaGraduationCap,
-    FaPlane,
     FaCode
 } from "react-icons/fa";
+import { MdOutlineWork } from "react-icons/md";
 
 export const timeline = [
 
@@ -32,7 +32,7 @@ export const timeline = [
         description:
             "Algoritmalar, yazılım mimarisi ve mühendislik temelleri üzerine yoğunlaştım. Yapay zekâ ve otonom sistemler alanında akademik ve uygulamalı çalışmalar gerçekleştirdim.",
         color: "#2563eb"
-    }, ,
+    },
     {
         icon: <FaCode />,
         title: "Projeler & Kişisel Çalışmalar",
@@ -41,5 +41,35 @@ export const timeline = [
         description:
             "Makine öğrenmesi, görüntü işleme ve React tabanlı web projeleri geliştiriyorum. Modern teknolojilerle kullanıcı odaklı, ölçeklenebilir ve sürdürülebilir çözümler üretiyorum.",
         color: "#06b6d4"
+    }
+];
+
+export const jobtimeline = [
+    {
+        icon: <MdOutlineWork />,
+        title: "Bilgi Teknolojileri Stajyeri",
+        subtitle: "TNC GORUP",
+        date: "2025",
+        description:
+            "Python Kodlama ile ToDo projesi geliştirdim ,Excel ile veri analizi ve raporlama çalışmaları yaptım. Photoshop ile görsel düzenleme süreçlerine katkı sağladım ve AutoCAD kullanarak teknik çizimler oluşturdum.",
+        color: "#2563eb"
+    },
+    {
+        icon: <MdOutlineWork />,
+        title: "Ar-Ge Stajyeri",
+        subtitle: "Bandırma Onyedi Eylül Üniversitesi",
+        date: "2025",
+        description:
+            "Teknofest Savaşan İHA projesinde otonom uçuş, görev planlama ve görüntü işleme sistemleri geliştirdim. Yapay zekâ destekli karar mekanizmaları ve haberleşme mimarileri üzerinde çalıştım. Teknik koordinasyon süreçlerinde aktif rol aldım.",
+        color: "#2563eb"
+    },
+    {
+        icon: <MdOutlineWork />,
+        title: "Yazılım Stajyeri",
+        subtitle: "Bihl+Wiedemann",
+        date: "2023",
+        description:
+            "ASP.NET Core kullanarak insan kaynakları işe alım süreçlerine yönelik web tabanlı bir uygulama geliştirdim. Backend mimarisi ve temel CRUD operasyonları üzerinde çalıştım.",
+        color: "#2563eb"
     }
 ];

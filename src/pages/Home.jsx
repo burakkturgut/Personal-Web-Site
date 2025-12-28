@@ -59,7 +59,6 @@ function Home() {
                     </div>
                     <div className="about-highlights">
                         <div className="highlight-item">
-                            🎓
                             <span>Bilgisayar Mühendisi</span>
                         </div>
                     </div>

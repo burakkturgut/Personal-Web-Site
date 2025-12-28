@@ -1,4 +1,3 @@
-/* Education Page Container */
 .education-page {
     min-height: 100vh;
     padding: 8rem 2rem 4rem;
@@ -10,28 +9,9 @@
     margin: 0 auto;
 }
 
-/* Header Section */
 .education-header {
     text-align: center;
     margin-bottom: 5rem;
-}
-
-.header-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.75rem 1.5rem;
-    background: rgba(37, 99, 235, 0.1);
-    border: 1px solid rgba(37, 99, 235, 0.2);
-    border-radius: 25px;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #2563eb;
-    margin-bottom: 2rem;
-}
-
-.header-badge svg {
-    font-size: 1.25rem;
 }
 
 .education-title {
@@ -42,13 +22,6 @@
     color: #111;
 }
 
-.gradient-text {
-    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
 .education-subtitle {
     font-size: 1.125rem;
     color: #666;
@@ -56,7 +29,6 @@
     margin: 0 auto;
 }
 
-/* Main Education Card */
 .education-main {
     margin-bottom: 5rem;
 }
@@ -87,14 +59,6 @@
 .edu-icon {
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    font-size: 2rem;
-    flex-shrink: 0;
 }
 
 .edu-title-section {
@@ -146,7 +110,7 @@
     font-size: 1.125rem;
 }
 
-.edu-gpa {
+.edu-gna {
     text-align: center;
     padding: 1.25rem 2rem;
     background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
@@ -154,14 +118,14 @@
     border: 2px solid #2563eb;
 }
 
-.gpa-label {
+.gna-label {
     font-size: 0.875rem;
     color: #2563eb;
     font-weight: 600;
     margin-bottom: 0.25rem;
 }
 
-.gpa-value {
+.gna-value {
     font-size: 1.75rem;
     font-weight: 700;
     color: #1e40af;
@@ -184,11 +148,6 @@
     margin-bottom: 1.5rem;
 }
 
-.description-title svg {
-    color: #2563eb;
-    font-size: 1.5rem;
-}
-
 .edu-description {
     font-size: 1.0625rem;
     line-height: 1.8;
@@ -201,7 +160,6 @@
     margin-bottom: 0;
 }
 
-/* Courses Section */
 .courses-section {
     margin-bottom: 5rem;
 }
@@ -229,7 +187,7 @@
 
 .toggle-all-btn {
     padding: 0.75rem 1.5rem;
-    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+    background: linear-gradient(135deg, #390646 0%, #7c3aed 100%);
     color: #ffffff;
     border: none;
     border-radius: 10px;
@@ -245,7 +203,6 @@
     box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
 }
 
-/* Accordion Styles */
 .courses-accordion {
     display: flex;
     flex-direction: column;
@@ -340,7 +297,6 @@
     transform: rotate(180deg);
 }
 
-/* Accordion Content */
 .accordion-content {
     max-height: 0;
     overflow: hidden;
@@ -352,7 +308,6 @@
     padding: 0 2rem 1.5rem;
 }
 
-/* Course List inside Accordion */
 .courses-list {
     display: flex;
     flex-direction: column;
@@ -409,7 +364,7 @@
 }
 
 .cta-content {
-    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+    background: black;
     padding: 4rem 3rem;
     border-radius: 24px;
     color: #ffffff;
@@ -449,7 +404,7 @@
 
 .cta-btn.primary {
     background: #ffffff;
-    color: #2563eb;
+    color: #000000;
 }
 
 .cta-btn.primary:hover {
@@ -465,11 +420,11 @@
 
 .cta-btn.secondary:hover {
     background: #ffffff;
-    color: #2563eb;
+    color: #020202;
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
     transform: translateY(-4px);
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
     .education-title {
         font-size: 3rem;

@@ -1,12 +1,12 @@
+.home {
+    min-height: 100vh;
+    padding: 6rem 2rem 4rem;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
-}
-
-.home {
-    min-height: 100vh;
-    padding: 6rem 2rem 4rem;
 }
 
 .availability {
@@ -21,18 +21,6 @@
     border-radius: 20px;
     margin-bottom: 2rem;
     animation: pulse 2s ease-in-out infinite;
-}
-
-@keyframes pulse {
-
-    0%,
-    100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.8;
-    }
 }
 
 .hero {
@@ -51,7 +39,7 @@
     left: 50%;
     transform: translateX(-50%);
     font-size: 2rem;
-    color: #bbb;
+    color: #999797;
     animation: bounce 2s infinite;
     cursor: pointer;
 }
@@ -200,15 +188,6 @@
 .highlight-item {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #333;
-}
-
-.highlight-item {
-    display: flex;
-    align-items: center;
     gap: 1.25rem;
     font-size: 1.125rem;
     font-weight: 500;
@@ -225,7 +204,6 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
-/* Link Button */
 .link-button {
     background: none;
     border: none;
@@ -314,167 +292,4 @@
     font-size: 0.875rem;
     color: #9ca3af;
     font-weight: 500;
-}
-
-
-.skills {
-    margin-top: 8rem;
-    padding-bottom: 4rem;
-}
-
-.skills h3 {
-    font-size: 2.25rem;
-    font-weight: 700;
-    margin-bottom: 4rem;
-    color: #111;
-    text-align: center;
-}
-
-.skills-category {
-    margin-bottom: 4rem;
-}
-
-.skills-category:last-child {
-    margin-bottom: 0;
-}
-
-.skills-category h4 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #374151;
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.75rem;
-    border-bottom: 2px solid #e5e7eb;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.skills-category h4::before {
-    content: '';
-    width: 4px;
-    height: 20px;
-    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
-    border-radius: 2px;
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 1.5rem;
-}
-
-.skill-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1.75rem 1.25rem;
-    border-radius: 16px;
-    background: linear-gradient(145deg, #ffffff 0%, #f9fafb 100%);
-    border: 1px solid #e5e7eb;
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: #333;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.skill-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.skill-item>* {
-    position: relative;
-    z-index: 1;
-}
-
-.skill-item svg {
-    font-size: 2.75rem;
-    margin-bottom: 0.75rem;
-    color: #111;
-    transition: all 0.3s ease;
-}
-
-.skill-item .custom-icon {
-    font-size: 2.75rem;
-    margin-bottom: 0.75rem;
-    transition: all 0.3s ease;
-    display: block;
-}
-
-.skill-item:hover {
-    transform: translateY(-8px) scale(1.05);
-    box-shadow: 0 20px 40px rgba(37, 99, 235, 0.2);
-    border-color: #002f94;
-}
-
-.skill-item:hover::before {
-    opacity: 0.05;
-}
-
-.skill-item:hover svg,
-.skill-item:hover .custom-icon {
-    color: #2563eb;
-    transform: scale(1.1) rotate(5deg);
-}
-
-.skill-item:hover span {
-    color: #1e40af;
-}
-
-@media (max-width: 1024px) {
-    .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-        gap: 1.25rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .skills {
-        margin-top: 6rem;
-    }
-
-    .skills>h3 {
-        font-size: 2rem;
-        margin-bottom: 3rem;
-    }
-
-    .skills-category {
-        margin-bottom: 3rem;
-    }
-
-    .skills-category h4 {
-        font-size: 1.125rem;
-    }
-
-    .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-        gap: 1rem;
-    }
-
-    .skill-item {
-        padding: 1.5rem 1rem;
-    }
-
-    .skill-item svg,
-    .skill-item .custom-icon {
-        font-size: 2.25rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
