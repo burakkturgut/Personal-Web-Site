@@ -9,7 +9,7 @@
     padding: 0 2rem;
 }
 
-.availability {
+.home .availability {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -20,7 +20,6 @@
     padding: 0.5rem 1rem;
     border-radius: 20px;
     margin-bottom: 2rem;
-    animation: pulse 2s ease-in-out infinite;
 }
 
 .hero {
@@ -224,25 +223,25 @@
     color: #2563eb;
 }
 
-.featured-projects {
+.home .featured-projects {
     margin-top: 8rem;
 }
 
-.featured-projects h3 {
+.home .featured-projects h3 {
     font-size: 2.25rem;
     font-weight: 700;
     margin-bottom: 3rem;
     color: #111;
 }
 
-.projects-grid {
+.home .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-bottom: 3rem;
 }
 
-.project-card {
+.home .project-card {
     border: 1px solid #e5e7eb;
     padding: 2.5rem;
     border-radius: 16px;
@@ -252,43 +251,43 @@
     overflow: hidden;
 }
 
-.project-card::before {
+.home .project-card::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, #2563eb 0%, #7c3aed 100%);
+    background: linear-gradient(90deg, #be6a09 0%, #c4830c 100%);
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
 
-.project-card:hover::before {
+.home .project-card:hover::before {
     transform: scaleX(1);
 }
 
-.project-card:hover {
+.home .project-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     border-color: #d1d5db;
 }
 
-.project-card h4 {
+.home .project-card h4 {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 1rem;
     color: #111;
 }
 
-.project-card p {
+.home .project-card p {
     font-size: 1rem;
     line-height: 1.7;
     color: #6b7280;
     margin-bottom: 1.5rem;
 }
 
-.project-card span {
+.home .project-card span {
     font-size: 0.875rem;
     color: #9ca3af;
     font-weight: 500;

@@ -51,12 +51,6 @@
     background-clip: text;
 }
 
-.logo-dot {
-    color: #6ae3ff;
-    font-size: 1.8rem;
-    animation: blink 2s infinite;
-}
-
 @keyframes blink {
 
     0%,

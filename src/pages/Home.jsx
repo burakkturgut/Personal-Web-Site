@@ -1,7 +1,7 @@
 import "../css/Home.css";
 import profilImage from '../assets/images/burak.jpg';
 import { useNavigate } from "react-router-dom";
-
+import cv from '../assets/cv/cv.pdf'
 function Home() {
 
     const navigate = useNavigate();
@@ -9,6 +9,16 @@ function Home() {
     const scrollToNextSection = () => {
         const nextSection = document.getElementById('next-section');
         nextSection.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    const handleDownloadCV = () => {
+        const cvPath = cv;
+        const link = document.createElement('a');
+        link.href = cvPath;
+        link.download = 'Burak_Turgut_CV.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     };
 
     return (
@@ -32,8 +42,12 @@ function Home() {
                         </p>
 
                         <div className="hero-buttons">
-                            <button onClick={() => navigate("/projects")} className="primary">Projeleri Görüntüle</button>
-                            <button onClick={() => navigate("/contact")} className="secondary">İletişime Geç</button>
+                            <button onClick={handleDownloadCV} className="primary">
+                                CV'mi İndir
+                            </button>
+                            <button onClick={() => navigate("/contact")} className="secondary">
+                                İletişime Geç
+                            </button>
                         </div>
                     </div>
 

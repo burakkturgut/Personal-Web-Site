@@ -33,8 +33,7 @@ const Navbar = () => {
         <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
             <div className="navbar-container">
                 <NavLink to="/" className="logo" onClick={closeMenu}>
-                    <span className="logo-text">Sayfama Hoşgeldiniz</span>
-                    <span className="logo-dot">.</span>
+                    <span className="logo-text">Burak Turgut</span>
                 </NavLink>
                 <div className="nav-links">
                     <NavLink to="/" end className="nav-link">

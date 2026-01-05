@@ -1,0 +1,503 @@
+.projects-page {
+    min-height: 100vh;
+    padding: 8rem 2rem 4rem;
+    background: linear-gradient(180deg, #fafbff 0%, #f0f4ff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.projects-header {
+    text-align: center;
+    margin-bottom: 5rem;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.projects-title {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: #0f172a;
+    letter-spacing: -0.02em;
+}
+
+
+.projects-subtitle {
+    font-size: 1.25rem;
+    color: #64748b;
+    max-width: 650px;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+}
+
+.hero-project {
+    margin-bottom: 6rem;
+    animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #f97316 100%);
+    color: #ffffff;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 8px 40px rgba(245, 158, 11, 0.6);
+    }
+}
+
+.projects-page .hero-content {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 3rem;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(37, 99, 235, 0.1);
+    border-radius: 30px;
+    padding: 2.5rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects-page .hero-content:hover {
+    box-shadow: 0 25px 60px rgba(37, 99, 235, 0.15);
+    transform: translateY(-8px);
+    border-color: #2563eb;
+}
+
+.projects-page .hero-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+}
+
+.image-glow {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.2) 0%, transparent 70%);
+    animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.projects-page .hero-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+.projects-page .hero-content:hover .projects-page .hero-image {
+    transform: scale(1.08);
+}
+
+.projects-page .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: 2;
+    backdrop-filter: blur(5px);
+}
+
+.projects-page .hero-content:hover .hero-overlay {
+    opacity: 1;
+}
+
+.projects-page .hero-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 2.5rem;
+    background: #ffffff;
+    color: #0f172a;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-link:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.hero-link.github {
+    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+    color: #ffffff;
+}
+
+.hero-link .demo {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    color: #ffffff;
+}
+
+.hero-link svg {
+    font-size: 1.5rem;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.hero-category {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(124, 58, 237, 0.1) 100%);
+    color: #2563eb;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border: 2px solid rgba(37, 99, 235, 0.2);
+}
+
+.hero-date {
+    font-size: 1rem;
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+.projects-page .hero-title {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.projects-page .hero-description {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #475569;
+    margin-bottom: 2rem;
+}
+
+.hero-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.hero-tech {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.875rem 1.5rem;
+    background: #ffffff;
+    border: 2px solid;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.hero-tech:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    background: var(--tech-color);
+    color: #ffffff;
+}
+
+.hero-tech:hover span {
+    color: #ffffff !important;
+}
+
+.hero-tech-more {
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    border: 2px dashed #94a3b8;
+    color: #475569;
+    font-weight: 700;
+}
+
+.hero-tech svg {
+    font-size: 1.75rem;
+}
+
+.featured-section,
+.all-projects-section {
+    margin-bottom: 5rem;
+    animation: fadeInUp 0.8s ease-out 0.4s backwards;
+}
+
+.section-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.projects-page .section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.section-line {
+    width: 100px;
+    height: 4px;
+    background: rgb(25, 36, 35);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2.5rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 2.5rem;
+}
+
+.github-cta {
+    text-align: center;
+    margin-top: 6rem;
+    animation: fadeInUp 0.8s ease-out 0.5s backwards;
+}
+
+.projects-page .cta-content {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    padding: 5rem 4rem;
+    border-radius: 30px;
+    color: #ffffff;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-page .cta-content::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, transparent 70%);
+    animation: rotate 20s linear infinite;
+}
+
+.cta-icon-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #2563eb 0%, #2ba9c9 100%);
+    border-radius: 25px;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.4);
+}
+
+.cta-icon {
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.projects-page .cta-content h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+    letter-spacing: -0.02em;
+}
+
+.projects-page .cta-content p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    margin-bottom: 2.5rem;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+    line-height: 1.6;
+}
+
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 3rem;
+    background: #ffffff;
+    color: #0f172a;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: 15px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+}
+
+.github-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.3);
+}
+
+.github-btn svg {
+    font-size: 1.75rem;
+}
+
+@media (max-width: 1024px) {
+    .projects-title {
+        font-size: 3rem;
+    }
+
+    .projects-page .hero-content {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-page .hero-image-wrapper {
+        height: 350px;
+    }
+
+    .featured-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-page {
+        padding: 6rem 1.5rem 3rem;
+    }
+
+    .projects-title {
+        font-size: 2.5rem;
+    }
+
+    .projects-page .hero-title {
+        font-size: 2rem;
+    }
+
+    .projects-page .hero-description {
+        font-size: 1rem;
+    }
+
+    .projects-page .section-title {
+        font-size: 2rem;
+    }
+
+    .projects-page .cta-content {
+        padding: 4rem 2rem;
+    }
+
+    .projects-page .cta-content h2 {
+        font-size: 2.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-title {
+        font-size: 2rem;
+    }
+
+    .projects-page .hero-image-wrapper {
+        height: 250px;
+    }
+
+    .projects-page .hero-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .hero-link {
+        flex: 1;
+        min-width: 140px;
+        justify-content: center;
+        padding: 1rem 1.5rem;
+    }
+
+    .projects-page .cta-content h2 {
+        font-size: 1.75rem;
+    }
+
+    .github-btn {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+}

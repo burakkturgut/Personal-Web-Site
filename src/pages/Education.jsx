@@ -10,7 +10,7 @@ import banü from '../assets/images/banü.jpg'
 function Education() {
     const { degree, type, school, location, period, gna, description, academicFocus } = educationData
 
-    const [openCategories, setOpenCategories] = useState([0]);
+    const [openCategories, setOpenCategories] = useState([false]);
 
     const toggleCategory = (index) => {
         setOpenCategories(prev =>
