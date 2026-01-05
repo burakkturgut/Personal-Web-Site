@@ -3,10 +3,10 @@
 Modern, responsive ve kullanıcı dostu kişisel portföy web sitesi.  
 React ve Vite kullanılarak geliştirilmiştir.
 
-## 🌐 Canlı Demo
-🔗 https://burakkturgut.github.io/Personal-Web-Site
+##  Canlı Demo
+ https://burakkturgut.github.io/Personal-Web-Site
 
-## ✨ Özellikler
+##  Özellikler
 - Hızlı ve optimize edilmiş performans (Vite)
 - Responsive ve modern tasarım
 - Temiz ve profesyonel UI/UX
@@ -15,19 +15,19 @@ React ve Vite kullanılarak geliştirilmiştir.
 - SEO uyumlu yapı
 - Erişilebilirlik standartlarına uygun
 
-## 🛠️ Kullanılan Teknolojiler
+##  Kullanılan Teknolojiler
 - React 18
 - Vite
 - JavaScript (ES6+)
 - CSS3
 - Git & GitHub
 
-## 👤 Geliştirici
+##  Geliştirici
 **Burak Turgut**
 - GitHub: https://github.com/burakkturgut
 - Website: https://burakkturgut.github.io/Personal-Web-Site
 
-## © Telif Hakkı
+##  Telif Hakkı
 
 Bu proje ve içerisindeki tüm kaynak kodlar, tasarımlar ve içerikler  
 **Burak Turgut**’a aittir.
