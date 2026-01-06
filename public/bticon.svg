@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="modernGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Altıgen arka plan - daha büyük -->
+  <path d="M 50 3 L 95 26.5 L 95 73.5 L 50 97 L 5 73.5 L 5 26.5 Z" fill="url(#modernGrad)"/>
+  
+  <!-- BT harfleri - Çok daha büyük -->
+  <text x="50" y="72" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="-3">BT</text>
+</svg>
