@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import viteLogo from '/vite.svg'
+import viteLogo from '/bticon.svg'
 import './App.css'
 import Home from './pages/Home'
 import AppRouter from './routes/AppRouter'

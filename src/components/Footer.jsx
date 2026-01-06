@@ -39,12 +39,12 @@ const Footer = () => {
                     <div className="footer-section">
                         <h4 className="footer-heading">Hızlı Bağlantılar</h4>
                         <div className="footer-links">
-                            <Link to="/">Ana Sayfa</Link>
-                            <Link to="/about">Hakkımda</Link>
-                            <Link to="/education">Eğitim</Link>
-                            <Link to="/projects">Projeler</Link>
-                            <Link to="/certificates">Sertifikalar</Link>
-                            <Link to="/contact">İletişim</Link>
+                            <Link to="/" onClick={scrollToTop}>Ana Sayfa</Link>
+                            <Link to="/about" onClick={scrollToTop}>Hakkımda</Link>
+                            <Link to="/education" onClick={scrollToTop}>Eğitim</Link>
+                            <Link to="/projects" onClick={scrollToTop}>Projeler</Link>
+                            <Link to="/certificates" onClick={scrollToTop}>Sertifikalar</Link>
+                            <Link to="/contact" onClick={scrollToTop}>İletişim</Link>
                         </div>
                     </div>
                     <div className="footer-section">
