@@ -18,14 +18,14 @@ export const contactInfo = [
         icon: <FaPhone />,
         title: "Telefon",
         value: "+90 546 221 23 02",
-        link: "tel:+905xxxxxxxxx",
+        link: "tel:+905462212302",
         color: "#10b981"
     },
     {
         icon: <FaMapMarkerAlt />,
         title: "Konum",
         value: "Antalya, Türkiye",
-        link: "#",
+        link: "https://www.google.com/maps/place/Antalya,+Türkiye",
         color: "#ef4444"
     }
 ];

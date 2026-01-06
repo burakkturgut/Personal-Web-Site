@@ -52,7 +52,7 @@ const Footer = () => {
                         <div className="footer-contact">
                             <a href="mailto:burak.turgut.dev@gmail.com" className="contact-item">
                                 <FaEnvelope />
-                                <span>burak.turgut.dev@gmial.com</span>
+                                <span>burak.turgut.dev@gmail.com</span>
                             </a>
                         </div>
                         <h4 className="footer-heading footer-heading-social">Sosyal Medya</h4>

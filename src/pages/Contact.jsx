@@ -22,9 +22,9 @@ function Contact() {
 
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const EMAILJS_SERVICE_ID = '********';      // EmailJS'den aldığım Service ID
-    const EMAILJS_TEMPLATE_ID = '********';    // EmailJS'den aldığım Template ID
-    const EMAILJS_PUBLIC_KEY = '*******';      // EmailJS'den aldığım Public Key
+    const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID; // EmailJS'den aldığım Service ID
+    const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID; // EmailJS'den aldığım Template ID
+    const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY; // EmailJS'den aldığım Public Key 
 
     const handleChange = (e) => {
         setFormData({
