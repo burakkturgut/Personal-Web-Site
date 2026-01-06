@@ -3,7 +3,7 @@
 Modern, responsive ve kullanıcı dostu kişisel portföy web sitesi.  
 React ve Vite kullanılarak geliştirilmiştir.
 
-##  Canlı Demo
+##  Canlı 
  https://burakturgut.vercel.app
 
 ##  Özellikler
