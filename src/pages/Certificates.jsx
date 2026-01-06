@@ -123,7 +123,7 @@ function Certificates() {
                         <div className="modal-content">
                             <div className="modal-image">
                                 <img src={selectedCert.image} alt={selectedCert.title} />
-                            </div>3
+                            </div>
                             <div className="modal-info">
                                 <span className="modal-category">{selectedCert.category}</span>
                                 <h2 className="modal-title">{selectedCert.title}</h2>
