@@ -7,6 +7,7 @@ import Image3 from '../assets/images/burak_siha2.jpeg';
 import Image4 from '../assets/images/burak_mezuniyet2.jpeg';
 import Image5 from '../assets/images/burak_siha_yapım.jpeg';
 import Skills from "../components/skills";
+import { Link } from "react-router-dom";
 
 const images = [Image1, Image2, Image3, Image4, Image5];
 
@@ -102,10 +103,10 @@ function About() {
                     <div className="cta-card">
                         <h2>Birlikte Çalışalım</h2>
                         <p>Projeleriniz için modern çözümler üretelim</p>
-                        <a href="/contact" className="cta-button">
+                        <Link to="/contact" className="cta-button">
                             İletişime Geç
                             <span className="arrow">→</span>
-                        </a>
+                        </Link>
                     </div>
                 </section>
             </div>

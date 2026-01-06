@@ -6,6 +6,7 @@ import {
 import { educationData } from '../config/education'
 import { courseCategories } from '../config/education'
 import banü from '../assets/images/banü.jpg'
+import { Link } from "react-router-dom";
 
 function Education() {
     const { degree, type, school, location, period, gna, description, academicFocus } = educationData
@@ -152,12 +153,12 @@ function Education() {
                         <h2>Öğrendiklerimi Uygulamaya Geçiriyorum</h2>
                         <p>Eğitim sürecimde edindiğim bilgileri gerçek projelere dönüştürüyorum</p>
                         <div className="cta-buttons">
-                            <a href="/projects" className="cta-btn primary">
+                            <Link to="/projects" className="cta-btn primary">
                                 Projelerimi İncele
-                            </a>
-                            <a href="/certificates" className="cta-btn secondary">
+                            </Link>
+                            <Link to="/certificates" className="cta-btn secondary">
                                 Sertifikalarım
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </section>
