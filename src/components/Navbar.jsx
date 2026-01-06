@@ -28,11 +28,16 @@ const Navbar = () => {
     }, [menuOpen]);
 
     const closeMenu = () => setMenuOpen(false);
-
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
     return (
         <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
             <div className="navbar-container">
-                <NavLink to="/" className="logo" onClick={closeMenu}>
+                <NavLink to="/" className="logo" onClick={scrollToTop}>
                     <span className="logo-text">Burak Turgut</span>
                 </NavLink>
                 <div className="nav-links">
