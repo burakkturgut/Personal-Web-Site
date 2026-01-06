@@ -25,7 +25,7 @@ export const projects = [
     {
         id: 1,
         title: "E-Commerce Web Application",
-        description: "React, TypeScript, Redux Toolkit ve temiz mimari prensipleri kullanılarak geliştirilmiş modern bir e-ticaret uygulaması. Kullanıcı dostu arayüz, sepet yönetimi, ürün filtreleme ve responsive tasarım özellikleri içerir.",
+        description: "React ve TypeScript kullanılarak geliştirdiğim ölçeklenebilir bir e-ticaret web uygulaması. Redux Toolkit ile global state yönetimi sağladım. Ürün listeleme, filtreleme ve sepet yönetimi modülleri geliştirdim. Temiz mimari prensipleri uygulanarak sürdürülebilir ve okunabilir bir frontend yapısı oluşturdum.",
         image: e_commerce_web_site,
         category: "Frontend",
         technologies: [
@@ -41,7 +41,7 @@ export const projects = [
     {
         id: 2,
         title: "Personal Portfolio Website",
-        description: "React ve modern web teknolojileri kullanarak oluşturduğum kişisel portfolio websitesi. Responsive tasarım, smooth animasyonlar, EmailJS entegrasyonu ve kullanıcı dostu arayüz ile projelerimi ve becerilerimi sergiliyor.",
+        description: "React kullanılarak geliştirdiğim kişisel portföy web sitesi. Modern UI/UX prensipleri doğrultusunda responsive tasarım uyguladım. Smooth animasyonlar ve EmailJS entegrasyonu ile kullanıcı etkileşimi artırmayı hedefledim. Bileşen tabanlı mimari kullanılarak performans ve okunabilirlik ön planda tuttum.",
         image: personelWebSite,
         category: "Frontend",
         technologies: [
@@ -57,7 +57,7 @@ export const projects = [
     {
         id: 3,
         title: "İHA Kontrol Arayüzü (PyQt5)",
-        description: "İnsansız hava aracı için geliştirilen Python tabanlı masaüstü kontrol arayüzü. Gerçek zamanlı veri takibi ve manuel kontrol sağlar.",
+        description: "İnsansız hava aracı için Python ve PyQt5 kullanılarak geliştirdiğim masaüstü kontrol arayüzü. Gerçek zamanlı telemetri verilerinin izlenmesi, manuel kontrol ve harita tabanlı konum takibi sağlanması, OpenCV ile görüntü işleme entegrasyonu ve Flask ile servis tabanlı veri iletişimi gerçekleştirdim.",
         image: iha,
         category: "Otonom Sistem",
         technologies: [
@@ -74,7 +74,7 @@ export const projects = [
     {
         id: 4,
         title: "Real Estate Price Prediction",
-        description: "Regresyon modelleri (Linear Regression, Random Forest, Gradient Boosting) kullanarak gayrimenkul fiyat tahmin sistemi. Verileri işleyip model performansını MAE, MSE ve R² metrikleri ile ölçerek en iyi sonucu seçtim.",
+        description: "Python ve Scikit-learn kullanılarak geliştirdiğim gayrimenkul fiyat tahmin sistemi. Veri ön işleme ve feature engineering adımlarını uyguladım. Linear Regression, Random Forest ve Gradient Boosting modelleri MAE, MSE ve R² metrikleri ile karşılaştırılarak en iyi performans gösteren model belirledim.",
         image: real_estate_price,
         category: "AI & ML",
         technologies: [
@@ -90,7 +90,7 @@ export const projects = [
     {
         id: 5,
         title: "To-Do List Application",
-        description: "React kullanılarak geliştirilen modern yapılacaklar listesi uygulaması. Görev ekleme, silme ve tamamlama işlemlerini destekler. Bileşen tabanlı mimari ile state yönetimi sağlanmış, sade ve kullanıcı dostu bir arayüz sunulmuştur.",
+        description: "React kullanılarak geliştirilen yapılacaklar listesi uygulaması. Görev ekleme, silme ve tamamlama işlemleri destekler. Component tabanlı mimari ile state yönetimi sağladım ve sade, kullanıcı dostu bir arayüz tasarladım.",
         image: todo,
         category: "Frontend",
         technologies: [
@@ -106,7 +106,7 @@ export const projects = [
     {
         id: 6,
         title: "Brain Tumor Detection",
-        description: "MRI görüntüleriyle CNN tabanlı beyin tümörü sınıflandırma modeli. Görüntü işleme teknikleriyle doğruluğu artırdım ve Python/TensorFlow ile yüksek doğruluklu tahmin sistemi geliştirdim. Derin öğrenme ve medikal görüntü analizi projesi.",
+        description: "MRI görüntüleri üzerinde çalışan CNN tabanlı beyin tümörü sınıflandırma modeli geliştirdim. Python ve TensorFlow kullanılarak derin öğrenme modeli eğittim. Görüntü ön işleme teknikleri ile model doğruluğu artırdım. Medikal görüntü analizi alanında uygulamalı bir yapay zeka projesi gerçekleştirdim.",
         image: braintümor,
         category: "AI & ML",
         technologies: [
@@ -121,7 +121,7 @@ export const projects = [
     {
         id: 7,
         title: "Exchange App",
-        description: "React kullanılarak geliştirilmiş döviz / kur takip uygulaması. Güncel kurların listelenmesi, kullanıcı dostu arayüz ve component tabanlı mimari ile modern bir frontend deneyimi sunar.",
+        description: "React kullanılarak geliştirilen döviz ve kur takip uygulaması. Güncel kur verilerinin listelenmesi sağladım. Component tabanlı yapı ve kullanıcı dostu arayüz ile modern bir frontend deneyimi sundum.",
         image: exchange,
         category: "Frontend",
         technologies: [

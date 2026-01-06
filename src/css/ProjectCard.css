@@ -231,8 +231,8 @@
     margin-bottom: 1.5rem !important;
     display: -webkit-box !important;
     -webkit-box-orient: vertical !important;
-    -webkit-line-clamp: 3 !important;
-    line-clamp: 3;
+    -webkit-line-clamp: 5 !important;
+    line-clamp: 5;
     -webkit-box-orient: vertical !important;
     overflow: hidden !important;
     text-align: left !important;
@@ -307,8 +307,8 @@
 
     .project-card .project-description {
         font-size: 0.95rem !important;
-        -webkit-line-clamp: 2 !important;
-        line-clamp: 2;
+        -webkit-line-clamp: 8 !important;
+        line-clamp: 8;
     }
 
     .project-card .project-links {

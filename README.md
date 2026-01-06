@@ -4,7 +4,7 @@ Modern, responsive ve kullanıcı dostu kişisel portföy web sitesi.
 React ve Vite kullanılarak geliştirilmiştir.
 
 ##  Canlı Demo
- https://burakkturgut.github.io/Personal-Web-Site
+ https://burakturgut.vercel.app
 
 ##  Özellikler
 - Hızlı ve optimize edilmiş performans (Vite)
@@ -25,7 +25,7 @@ React ve Vite kullanılarak geliştirilmiştir.
 ##  Geliştirici
 **Burak Turgut**
 - GitHub: https://github.com/burakkturgut
-- Website: https://burakkturgut.github.io/Personal-Web-Site
+- Website: https://burakturgut.vercel.app
 
 ##  Telif Hakkı
 
