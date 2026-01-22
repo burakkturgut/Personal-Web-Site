@@ -12,6 +12,7 @@ import image11 from '../assets/sertifikalar/Siber Güvenlik.png'
 import image12 from '../assets/sertifikalar/GenAI Garanti BBVA_page-0001.jpg'
 import image13 from '../assets/sertifikalar/ChatGPT Kullanımı ve Prompt Mühendisliği Garanti BBVA_page-0001.jpg'
 import image14 from '../assets/sertifikalar/Temel Makine Öğrenmesi Garanti BBVA_page-0001.jpg'
+import image15 from '../assets/sertifikalar/Yazılım Test Otomasyon.png'
 
 
 export const categories = [
@@ -25,31 +26,32 @@ export const categories = [
     { value: 'Cyber Security', label: 'Siber Güvenlik' },
     { value: 'Networking', label: 'Ağ & Networking' },
     { value: 'Mobile Development', label: 'Mobil Geliştirme' },
-    { value: 'IT & Internship', label: 'IT & Staj' }
+    { value: 'IT & Internship', label: 'IT & Staj' },
+    { value: 'Software Testing', label: 'Yazılım Test & Otomasyon' }
 ];
 
 
 export const certificates = [
     {
         id: 1,
-        title: "Sıfırdan İleri Seviye React Kursu",
-        issuer: "Udemy",
-        date: "Aralık 2025",
-        category: "Frontend Development",
-        image: image1,
-        skills: ["React", "Hook Kullanımı", "Redux", "JavaScript"]
+        title: "Yazılım Test Otomasyonu",
+        issuer: "BTK Akademi",
+        date: "Ocak 2026",
+        category: "Software Testing",
+        image: image15,
+        skills: ["Selenium", "Test Otomasyonu", "Manuel Test", "Test Senaryosu"]
     },
     {
-        id: 12,
+        id: 2,
         title: "GenAI",
         issuer: "Garanti BBVA",
         date: "Aralık 2025",
         category: "Artificial Intelligence",
         image: image12,
-        skills: ["Üretken Yapay Zeka", "Büyük Dil Modelleri (LLM)", "Yapay Zeka Temelleri"]
+        skills: ["Üretken Yapay Zeka", "LLM", "Yapay Zeka Temelleri"]
     },
     {
-        id: 13,
+        id: 3,
         title: "ChatGPT Kullanımı ve Prompt Mühendisliği",
         issuer: "Garanti BBVA",
         date: "Aralık 2025",
@@ -58,13 +60,13 @@ export const certificates = [
         skills: ["Prompt Mühendisliği", "ChatGPT", "Üretken Yapay Zeka"]
     },
     {
-        id: 14,
+        id: 4,
         title: "Temel Makine Öğrenmesi",
         issuer: "Garanti BBVA",
         date: "Aralık 2025",
         category: "Machine Learning",
         image: image14,
-        skills: ["Makine Öğrenmesi", "Denetimli Öğrenme", "Model Değerlendirme"]
+        skills: ["Makine Öğrenmesi", "Denetimli Öğrenme"]
     },
     {
         id: 5,
@@ -76,7 +78,16 @@ export const certificates = [
         skills: ["BT Destek", "Ağ Temelleri", "Sistem Yönetimi"]
     },
     {
-        id: 9,
+        id: 6,
+        title: "Sıfırdan İleri Seviye React Kursu",
+        issuer: "Udemy",
+        date: "Aralık 2025",
+        category: "Frontend Development",
+        image: image1,
+        skills: ["React", "Hook Kullanımı", "Redux", "JavaScript"]
+    },
+    {
+        id: 7,
         title: "Javascript Temelleri",
         issuer: "BTK Akademi",
         date: "Eylül 2025",
@@ -91,28 +102,28 @@ export const certificates = [
         date: "Ağustos 2025",
         category: "Full Stack Development",
         image: image8,
-        skills: ["Frontend Geliştirme", "Backend Geliştirme", "Yapay Zeka Entegrasyonu"]
+        skills: ["Frontend", "Backend", "Yapay Zeka Entegrasyonu"]
     },
     {
-        id: 2,
+        id: 9,
         title: "Makine Öğrenmesi",
-        issuer: "Türkiye Cumhuriyeti Cumhurbaşkanlığı Dijital Dönüşüm Ofisi",
+        issuer: "T.C. Cumhurbaşkanlığı Dijital Dönüşüm Ofisi",
         date: "Ağustos 2024",
         category: "Machine Learning",
         image: image2,
         skills: ["Python", "Scikit-learn", "Model Eğitimi"]
     },
     {
-        id: 3,
+        id: 10,
         title: "Derin Öğrenme ile Görüntü İşleme",
-        issuer: "Türkiye Cumhuriyeti Cumhurbaşkanlığı Dijital Dönüşüm Ofisi",
+        issuer: "T.C. Cumhurbaşkanlığı Dijital Dönüşüm Ofisi",
         date: "Ağustos 2024",
         category: "Computer Vision",
         image: image3,
-        skills: ["Derin Öğrenme", "Evrişimsel Sinir Ağları (CNN)", "Görüntü İşleme"]
+        skills: ["Derin Öğrenme", "CNN", "Görüntü İşleme"]
     },
     {
-        id: 7,
+        id: 11,
         title: "Sıfırdan İleri Düzey Web Geliştirme",
         issuer: "Udemy",
         date: "Ekim 2023",
@@ -121,7 +132,7 @@ export const certificates = [
         skills: ["HTML", "CSS", "JavaScript", "Web Mimarisi"]
     },
     {
-        id: 6,
+        id: 12,
         title: "Flutter'a Giriş",
         issuer: "GDSC",
         date: "Kasım 2023",
@@ -130,7 +141,7 @@ export const certificates = [
         skills: ["Flutter", "Dart", "Mobil Arayüz Tasarımı"]
     },
     {
-        id: 10,
+        id: 13,
         title: "Siber güvenlik ve Bilgi Güvenliği",
         issuer: "Yönetim Bilişim Sistemleri Topluluğu",
         date: "Kasım 2023",
@@ -139,16 +150,16 @@ export const certificates = [
         skills: ["Bilgi Güvenliği", "Siber Güvenlik Temelleri"]
     },
     {
-        id: 11,
+        id: 14,
         title: "A'dan Z'ye Siber Güvenlik",
         issuer: "Yazılım Mühendisliği Topluluğu",
         date: "Kasım 2023",
         category: "Cyber Security",
         image: image11,
-        skills: ["Ağ Güvenliği", "Tehdit Analizi", "Siber Güvenlik Farkındalığı"]
+        skills: ["Ağ Güvenliği", "Tehdit Analizi"]
     },
     {
-        id: 4,
+        id: 15,
         title: "Wireshark ile Ağ Analizi",
         issuer: "Yazılım Mühendisliği Topluluğu",
         date: "Ağustos 2023",

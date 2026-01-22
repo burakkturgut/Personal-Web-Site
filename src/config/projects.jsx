@@ -11,7 +11,10 @@ import {
     SiFlask,
     SiScikitlearn,
     SiPandas,
+    SiPostgresql,
+    SiTailwindcss,
 } from "react-icons/si";
+import qr from '../assets/images/qr.png'
 import braintümor from '../assets/images/BrainTümor.jpg'
 import personelWebSite from '../assets/images/kişisel_web_site.png'
 import e_commerce_web_site from '../assets/images/e-commerce_web_site.png'
@@ -24,6 +27,24 @@ import iha from '../assets/images/iha.png'
 export const projects = [
     {
         id: 1,
+        title: "QR Code Generator",
+        description: "React ve Flask ile geliştirilen, bulut tabanlı profesyonel QR kod oluşturma platformu. JWT kimlik doğrulama, PostgreSQL veritabanı ve çoklu dil desteği (TR/EN) ile kullanıcıların özelleştirilebilir QR kodlar oluşturmasını, güvenle saklamasını ve toplu PDF export yapabilmesini sağlar. Glassmorphism tasarımı, responsive arayüz ve gelişmiş filtreleme özellikleriyle modern bir kullanıcı deneyimi sunar.",
+        image: qr,
+        category: "Full-Stack",
+        technologies: [
+            { name: "React", icon: <SiReact />, color: "#61DAFB" },
+            { name: "Flask", icon: <SiFlask />, color: "#000000" },
+            { name: "PostgreSQL", icon: <SiPostgresql />, color: "#4169E1" },
+            { name: "Tailwind CSS", icon: <SiTailwindcss />, color: "#06B6D4" },
+            { name: "Python", icon: <SiPython />, color: "#3776AB" }
+        ],
+        github: "https://github.com/burakkturgut/qr-code-generator",
+        demo: false,
+        featured: true,
+        date: "2025"
+    },
+    {
+        id: 2,
         title: "E-Commerce Web Application",
         description: "React ve TypeScript kullanılarak geliştirdiğim ölçeklenebilir bir e-ticaret web uygulaması. Redux Toolkit ile global state yönetimi sağladım. Ürün listeleme, filtreleme ve sepet yönetimi modülleri geliştirdim. Temiz mimari prensipleri uygulanarak sürdürülebilir ve okunabilir bir frontend yapısı oluşturdum.",
         image: e_commerce_web_site,
@@ -39,7 +60,7 @@ export const projects = [
         date: "2025"
     },
     {
-        id: 2,
+        id: 3,
         title: "Personal Portfolio Website",
         description: "React kullanılarak geliştirdiğim kişisel portföy web sitesi. Modern UI/UX prensipleri doğrultusunda responsive tasarım uyguladım. Smooth animasyonlar ve EmailJS entegrasyonu ile kullanıcı etkileşimi artırmayı hedefledim. Bileşen tabanlı mimari kullanılarak performans ve okunabilirlik ön planda tuttum.",
         image: personelWebSite,
@@ -55,7 +76,7 @@ export const projects = [
         date: "2025"
     },
     {
-        id: 3,
+        id: 4,
         title: "İHA Kontrol Arayüzü (PyQt5)",
         description: "İnsansız hava aracı için Python ve PyQt5 kullanılarak geliştirdiğim masaüstü kontrol arayüzü. Gerçek zamanlı telemetri verilerinin izlenmesi, manuel kontrol ve harita tabanlı konum takibi sağlanması, OpenCV ile görüntü işleme entegrasyonu ve Flask ile servis tabanlı veri iletişimi gerçekleştirdim.",
         image: iha,
@@ -68,11 +89,11 @@ export const projects = [
         ],
         github: "https://github.com/burakkturgut/iha-kontrol-arayuzu-pyqt5",
         demo: null,
-        featured: true,
+        featured: false,
         date: "2025"
     },
     {
-        id: 4,
+        id: 5,
         title: "Real Estate Price Prediction",
         description: "Python ve Scikit-learn kullanılarak geliştirdiğim gayrimenkul fiyat tahmin sistemi. Veri ön işleme ve feature engineering adımlarını uyguladım. Linear Regression, Random Forest ve Gradient Boosting modelleri MAE, MSE ve R² metrikleri ile karşılaştırılarak en iyi performans gösteren model belirledim.",
         image: real_estate_price,
@@ -88,7 +109,7 @@ export const projects = [
         date: "2025"
     },
     {
-        id: 5,
+        id: 6,
         title: "To-Do List Application",
         description: "React kullanılarak geliştirilen yapılacaklar listesi uygulaması. Görev ekleme, silme ve tamamlama işlemleri destekler. Component tabanlı mimari ile state yönetimi sağladım ve sade, kullanıcı dostu bir arayüz tasarladım.",
         image: todo,
@@ -104,7 +125,7 @@ export const projects = [
         date: "2025"
     },
     {
-        id: 6,
+        id: 7,
         title: "Brain Tumor Detection",
         description: "MRI görüntüleri üzerinde çalışan CNN tabanlı beyin tümörü sınıflandırma modeli geliştirdim. Python ve TensorFlow kullanılarak derin öğrenme modeli eğittim. Görüntü ön işleme teknikleri ile model doğruluğu artırdım. Medikal görüntü analizi alanında uygulamalı bir yapay zeka projesi gerçekleştirdim.",
         image: braintümor,
@@ -119,7 +140,7 @@ export const projects = [
         date: "2025"
     },
     {
-        id: 7,
+        id: 8,
         title: "Exchange App",
         description: "React kullanılarak geliştirilen döviz ve kur takip uygulaması. Güncel kur verilerinin listelenmesi sağladım. Component tabanlı yapı ve kullanıcı dostu arayüz ile modern bir frontend deneyimi sundum.",
         image: exchange,
